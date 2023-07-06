@@ -42,6 +42,9 @@ h2 {
   padding: 20px;
   gap: 10px;
 }
+.img-masc img {
+  max-width: 400px;
+}
 
 mask {
   max-width: 200px;
