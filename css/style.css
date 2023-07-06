@@ -1,0 +1,97 @@
+.estrutura {
+  display: grid;
+  grid-template-areas: "header header header" "nav content ads" "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  background-color: rebeccapurple;
+  color: white;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+.header a {
+  color: white;
+  display: block;
+  padding: 20px;
+}
+.header .header-nav {
+  align-items: center;
+  display: block;
+  padding: 20px;
+}
+
+.content {
+  grid-area: content;
+  max-width: 1144px;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+h2 {
+  padding: 40px 0;
+}
+
+.img-masc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 400px 400px;
+  padding: 20px;
+  gap: 20px;
+  place-items: center;
+}
+.img-masc img {
+  max-width: 400px;
+  display: block;
+}
+
+mask {
+  max-width: 200px;
+}
+
+.masc {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+}
+
+.mask1 {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.mask2 {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+.mask3 {
+  -webkit-clip-path: polygon(50% 4%, 100% 0%, 60% 93%, 0% 100%);
+          clip-path: polygon(50% 4%, 100% 0%, 60% 93%, 0% 100%);
+}
+
+.mask4 {
+  -webkit-clip-path: url(#svgmask2);
+          clip-path: url(#svgmask2);
+}
+
+.mask5 {
+  -webkit-clip-path: url(#svgmask1);
+          clip-path: url(#svgmask1);
+}
+
+.mask6 {
+  -webkit-clip-path: url(#svgmask3);
+          clip-path: url(#svgmask3);
+}
+
+* {
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+}/*# sourceMappingURL=style.css.map */

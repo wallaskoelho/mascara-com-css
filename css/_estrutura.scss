@@ -1,0 +1,45 @@
+
+
+.estrutura{
+    display: grid;
+   
+    grid-template-areas: 
+    "header header header"
+    "nav content ads"
+    "footer footer footer"
+    ;
+}
+
+.header{
+    grid-area: header;
+    display: grid;
+    background-color: rebeccapurple;
+    color: white;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    
+    
+
+    a{
+        color: white;
+        display: block;
+        padding: 20px;
+    }
+
+    .header-nav{
+        align-items: center;
+        display: block;
+        padding: 20px;
+    }
+}
+
+.content{
+    grid-area: content;
+    max-width: 1144px;
+    
+
+}
+
+.footer{
+    grid-area: footer;
+}
