@@ -26,16 +26,61 @@
   grid-area: content;
   max-width: 1144px;
 }
-.content h2 {
-  padding: 40px 0;
-}
-.content .img-masc {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 
 .footer {
   grid-area: footer;
+}
+
+h2 {
+  padding: 40px 0;
+}
+
+.img-masc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 400px 400px;
+  padding: 20px;
+  gap: 10px;
+}
+
+mask {
+  max-width: 200px;
+}
+
+.masc {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+}
+
+.mask1 {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.mask2 {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+.mask3 {
+  -webkit-clip-path: polygon(50% 4%, 100% 0%, 60% 93%, 0% 100%);
+          clip-path: polygon(50% 4%, 100% 0%, 60% 93%, 0% 100%);
+}
+
+.mask4 {
+  -webkit-clip-path: url(#svgmask2);
+          clip-path: url(#svgmask2);
+}
+
+.mask5 {
+  -webkit-clip-path: url(#svgmask1);
+          clip-path: url(#svgmask1);
+}
+
+.mask6 {
+  -webkit-clip-path: url(#svgmask3);
+          clip-path: url(#svgmask3);
 }
 
 * {
