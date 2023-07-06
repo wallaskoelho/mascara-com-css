@@ -1,0 +1,27 @@
+.estrutura {
+  display: grid;
+  grid-template-areas: "header header header" "nav content ads" "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content {
+  grid-area: content;
+  max-width: 1144px;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+* {
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+}/*# sourceMappingURL=style.css.map */
